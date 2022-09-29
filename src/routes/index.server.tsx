@@ -31,6 +31,7 @@ export default function Homepage() {
         <SeoForHomepage />
       </Suspense>
       <Suspense>
+        <h1>aaaa</h1>
         <HomepageContent />
       </Suspense>
     </Layout>
