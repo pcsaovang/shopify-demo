@@ -32,7 +32,8 @@ export default defineConfig({
     defaultCountryCode: 'US',
     defaultLanguageCode: 'EN',
     storeDomain: 'd46944.myshopify.com',
-    storefrontToken: '7819e6abdaad4029736a7b7fa4e25284',
+    storefrontToken: process.env.API_KEY ?? '',
+    // storefrontToken: '7819e6abdaad4029736a7b7fa4e25284',
     // privateStorefrontToken: Oxygen?.env?.PRIVATE_STOREFRONT_API_TOKEN,
     storefrontApiVersion: '2022-07',
     // @ts-ignore
