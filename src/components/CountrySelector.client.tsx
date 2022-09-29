@@ -54,7 +54,6 @@ export function CountrySelector() {
   return (
     <div className="relative">
       <Listbox onChange={setCountry}>
-        {/* @ts-expect-error @headlessui/react incompatibility with node16 resolution */}
         {({open}) => {
           setTimeout(() => setListboxOpen(open));
           return (
@@ -125,7 +124,6 @@ export function Countries({
 
       return (
         <Listbox.Option key={country.isoCode} value={country}>
-          {/* @ts-expect-error @headlessui/react incompatibility with node16 resolution */}
           {({active}) => (
             <div
               className={`text-contrast dark:text-primary ${getClassName(
